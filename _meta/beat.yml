@@ -1,0 +1,15 @@
+################### Rediskeysbeat Configuration Example #########################
+
+############################# Rediskeysbeat ######################################
+rediskeysbeat:
+  # Defines how often an event is sent to the output
+  period: 10s
+  maxconn: 10
+  network: "tcp"
+  host: "localhost"  
+  port: 6379
+  auth:
+    required: false
+    requiredpass: ""
+  keypattern: "*"
+  keyentity: ""

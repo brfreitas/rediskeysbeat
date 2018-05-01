@@ -1,0 +1,16 @@
+- key: rediskeysbeat
+  title: rediskeysbeat
+  description:
+  fields:
+    - name: key
+      type: string
+      required: true
+      description: >
+        redis key
+    - name: fields-values
+      type: array
+      required: false
+      description: >
+        all fields returned by HGETALL
+        concatened with your respective value
+        separated by (:) character
